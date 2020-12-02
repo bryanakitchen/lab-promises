@@ -1,13 +1,12 @@
 const fsPromises = require('fs').promises;
 
-async function copy(src, dst) {
+function copy(src, dst) {
     try {
-        const data = await fsPromises.readFile(`${src}`, 'utf-8' 
-        );
-        console.log(data);
-        
-        await fsPromises.writeFile(`${dst}`, 'Copying over ReadTest - out of sandbox');
-        console.log('Done!');
+        const data = fsPromises.readFile(src, 'utf-8' 
+        ).then( 
+            fsPromises.writeFile(dst, 'Copying over ReadTest - out of sandbox'),
+            console.log('Done!'),
+        );        
         
     } catch(err) {
         console.log(err);
