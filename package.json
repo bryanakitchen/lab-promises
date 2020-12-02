@@ -1,0 +1,26 @@
+{
+  "name": "lab-promises",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "npm run test -- --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bryanakitchen/lab-promises.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bryanakitchen/lab-promises/issues"
+  },
+  "homepage": "https://github.com/bryanakitchen/lab-promises#readme",
+  "devDependencies": {
+    "@types/jest": "^26.0.16",
+    "eslint": "^7.14.0",
+    "jest": "^26.6.3"
+  }
+}
