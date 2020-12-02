@@ -1,3 +1,3 @@
 ## Promises
 
-Hello 
+The Promises Lab 
