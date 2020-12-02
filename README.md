@@ -1,3 +1,1 @@
 ## Promises
-
-The Promises Lab 
