@@ -13,4 +13,8 @@ function transform(src) {
         })
 }
 
-transform('./testFile.txt').then(console.log);
+// transform('./testFile.txt').then(console.log);
+
+module.exports = {
+    transform
+}
