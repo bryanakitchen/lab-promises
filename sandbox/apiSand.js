@@ -1,6 +1,6 @@
 const fetch = require('node-fetch');
 
-function nodeFetch() {
+function nodeFetchQuote() {
     return fetch('http://futuramaapi.herokuapp.com/api/quotes/1')
     .then(data => {
         return data.json();
@@ -28,6 +28,6 @@ function nodeFetchOrigin() {
     .then(origins => console.log(origins))
 }
 
-nodeFetch().then(console.log);
+nodeFetchQuote().then(console.log);
 nodeFetchCharacter().then(console.log);
-nodeFetchOrigin().then(console.log);
+nodeFetchOrigin();
